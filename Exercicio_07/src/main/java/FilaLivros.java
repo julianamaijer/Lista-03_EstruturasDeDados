@@ -18,11 +18,11 @@ public class FilaLivros {
         }
     }
 
-    public void removeLivros(){
+    public void removeLivros(int tamanhoPilha){
         PilhaLivros pilhaLivros = new PilhaLivros();
         if (livrosDados.length >= 1 && tamanho > 0){
             System.out.println("O livro " + livrosDados[0].getTitulo() + " foi removido da fila e adicionado na pilha.");
-            pilhaLivros.adicionaLivrosPilha(livrosDados[0].getTitulo(), livrosDados[0].getQtdExemplares());
+            pilhaLivros.adicionaLivrosPilha(livrosDados[0].getTitulo(), livrosDados[0].getQtdExemplares(),tamanhoPilha);
             for ( int i = 0; i < 5; i++){
                 if (i < 4){
                     livrosDados[i] = livrosDados[i+1];

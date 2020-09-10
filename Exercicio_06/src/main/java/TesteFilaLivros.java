@@ -25,8 +25,7 @@ public class TesteFilaLivros {
                     livros.adicionaLivrosFila(titulo,quantidade);
                     break;
                 case 2:
-                    titulo = livros.removeLivros();
-                    pilhaLivros.adicionaLivrosPilha(titulo,quantidade);
+                    livros.removeLivros();
                     break;
                 case 3:
                     livros.imprimeFila();
